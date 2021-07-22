@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-background: hsl(233, 47%, 7%);
+    --color-card: hsl(244, 38%, 16%);
+    --color-accent: hsl(277, 64%, 61%);
+    --color-heading: hsl(0, 0%, 100%);
+    --color-paragraph: hsla(0, 0%, 100%, 0.75);
+    --color-heading-card : hsla(0, 0%, 100%, 0.6);
+}
+
+body {
+    font-size: 15px;
+    background-color: var(--color-background);
+}
+
+.main-cont {
+    background-color: var(--color-card);
+    display: flex;
+    min-height:375px;
+    max-width:75%;
+    margin: 7em auto;
+    justify-content: space-between;
+    border: 1px solid transparent;
+    border-radius: 7px;
+}
+
+.cont-texto{
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    padding: 4.5rem;
+}
+
+.texto-principal h1{
+    color: var(--color-heading);
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 1.9rem;
+}
+
+.texto-principal span {
+    color: var(--color-accent);
+}
+
+.texto-principal p {
+    color: var(--color-heading-card);
+    line-height: 1.5rem;
+    margin-top: 1rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.texto-datos {
+    display: flex;
+    margin-top: 5rem;
+    gap: 1rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card-datos h2 {
+    color: var(--color-heading);
+    font-family: 'Inter';
+    font-weight: 700;
+}
+
+.card-datos p {
+    color: var(--color-heading-card);
+    font-family: 'Lexend Deca';
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    margin-top: .5rem;
+}
+
+.cont-imagen {
+    width: 49%;
+    background-image: linear-gradient(rgba(170, 91, 219, 0.4),rgba(170, 91, 219, 0.4)), url(/images/image-header-desktop.jpg);
+    background-size: cover;
+    background-color: var(--color-card);
+    border-radius: 0px 7px 7px 0px;
+    filter: opacity(0.655);
+}
+
+
+
+@media screen and (max-width: 1000px) {
+
+
+.main-cont{
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 5rem auto;
+    border: 2px solid transparent;
+    border-radius: 10px;
+}
+
+.cont-texto {
+    order: 2;
+    text-align: center;
+    padding: 0;
+    height: 50%;
+    width: 100%;
+    padding: 1rem;
+}
+
+.texto-datos {
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.cont-imagen {
+    background-image: linear-gradient(rgba(170, 91, 219, 0.355),rgba(170, 91, 219, 0.355)), url(/images/image-header-mobile.jpg);
+    order: 1;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    border-radius: 7px 7px 0 0;
+}
+
+}
