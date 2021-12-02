@@ -2,7 +2,7 @@
 
 ## Welcome! 👋
 
-Live site URL: https://joadevy.github.io/
+Live site URL: https://joadevy.github.io/FM-Card-Component/
 
 Thanks for checking out this front-end coding challenge.
 
